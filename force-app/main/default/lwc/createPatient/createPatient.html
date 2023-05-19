@@ -1,0 +1,35 @@
+<template>
+    <div class="slds-tabs_card">
+        <div class="slds-page-header">
+            <div class="slds-page-header__row">
+                <div class="slds-page-header__col-title">
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <!--<span class="slds-icon_container slds-icon-standard-opportunity">
+                                 <lightning-icon icon-name="standard:recipe" alternative-text="recipe" title="recipe"></lightning-icon>
+                            </span>-->
+                        </div>
+                        <div class="slds-media__body">
+                            <div class="slds-page-header__name">
+                                <div class="slds-page-header__name-title">
+                                    <h1>
+                                        <span>Create Patient</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <br/>
+    <div style="width:800px;padding:3px;border-color:black;border-radius:1;">
+    <lightning-record-form
+        object-api-name={patientObject}
+        fields={myFields}
+        onsuccess={handleCreate}
+        onerror={showToast}
+        >
+    </lightning-record-form>
+</div>
+</template>
