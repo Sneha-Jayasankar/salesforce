@@ -3,7 +3,7 @@ public class ZoomMeetingCreation {
       @InvocableMethod(label='Get Zoom Meeting URL with Input' description='Returns a meeting URL For Zoom')
     public static void getZoomMeetingUrl(List<FlowInputs> inputValues) {
         
-        ZoomCreateMeetingWapper newWrapper = new ZoomCreateMeetingWapper();
+        ZoomCreateMeetingWrapper newWrapper = new ZoomCreateMeetingWrapper();
         Id appointmentId = inputValues[0].appointmentId;
         system.debug(appointmentId);
         newWrapper.topic = 'Consultation';
