@@ -1,0 +1,13 @@
+<apex:page standardController="Appointment__c" recordSetVar="records" extensions="ScheduleAppointmentUpdate" >
+  <apex:form >
+   <apex:pageblock >
+      <apex:pageMessages id="showmsg"></apex:pageMessages>
+       <h2>Please press confirm if you want to update all the appointments today</h2>
+
+       <apex:pageBlockButtons location="bottom">
+			<apex:commandButton value="Confirm" action="{!scheduleAppointmentUpdate}" rerender="showmsg"/>
+       		<apex:commandButton value="Cancel" action="{!redirectToList}" />
+       </apex:pageBlockButtons>
+	</apex:pageblock>
+  </apex:form>
+</apex:page>

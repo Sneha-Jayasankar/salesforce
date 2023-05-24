@@ -1,0 +1,15 @@
+<apex:page showHeader="False" sidebar="false" Controller="HomePage" >
+  <style type="text/css">
+	p { font-weight: bold; }
+  </style>
+  <p><center> <font size="6" color="#00bfff"> <b> HOSPITAL MANAGEMENT SYSTEM </b> </font></center> </p>
+  <apex:form >
+       <apex:pageBlock title="NEW REGISTRATIONS">
+ 		 <center>
+             <apex:commandButton value="New Patient" action="/apex/Patient"/>
+  			<apex:commandButton value="New Doctor" action="https://c.ap2.visual.force.com/apex/Doctors?sfdc.tabName=01r28000000UAg1"/>
+  			<apex:commandButton value="New Appointment" action="https://c.ap2.visual.force.com/apex/HospitalManagementSystem?sfdc.tabName=01r28000000UAoU"/>
+  		</center>
+		</apex:pageBlock>
+  </apex:form>
+</apex:page>

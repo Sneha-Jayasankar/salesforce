@@ -1,0 +1,25 @@
+<apex:page standardController="Appointment__c" standardStylesheets="true">
+<apex:form >
+<apex:pageBlock title="New Appointment">
+    
+    
+    <apex:pageBlockSection >
+    <apex:inputField value="{!Appointment__c.Patient__c}" required="true"/>
+    <apex:inputField value="{!Appointment__c.Department__c }" required="true"/>
+    <apex:inputField value="{!Appointment__c.Doctor__c }" required="true"/>
+    <apex:inputField value="{!Appointment__c.Type__c}" required="true"/>
+    <apex:inputField value="{!Appointment__c.Date_Time__c}" required="true"/>
+     </apex:pageBlockSection>
+    
+    
+    <apex:pageBlockButtons >
+    <apex:commandButton value="Save" action="{!save}" />
+    <apex:commandButton value="Cancel" action="{!cancel}" immediate="true" />
+    </apex:pageBlockButtons>
+  
+    
+    
+</apex:pageBlock>
+</apex:form>
+
+</apex:page>

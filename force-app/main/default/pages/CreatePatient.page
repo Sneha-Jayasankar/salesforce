@@ -1,0 +1,31 @@
+<apex:page standardController="Patient__c" standardStyleSheets="true" >
+<apex:form >
+    <apex:pageBlock title="NEW PATIENT DETAILS"> 
+    
+
+
+    <apex:pageBlock >
+    
+    <apex:pageBlockSection >
+    <apex:inputField value="{!Patient__c.Name}" required="true"/>
+    <apex:inputField value="{!Patient__c.Email__c}" required="true"/>
+    <apex:inputField value="{!Patient__c.Phone_Number__c}" required="true" />
+    <apex:inputField value="{!Patient__c.Gender__c}" required="true"/>
+     <apex:inputField value="{!Patient__c.Date_Of_Birth__c}" required="true"/>
+    <apex:inputField value="{!Patient__c.Blood_Group__c}" required="true"/>
+    <apex:inputField value="{!Patient__c.Patient_Photo__c}" />
+    
+    </apex:pageBlockSection>
+    
+    <apex:pageBlockButtons >
+    <apex:commandButton value="Save" action="{!save}" rerender="error" />
+    <apex:commandButton value="Cancel" action="{!cancel}" immediate="true"/>
+    
+    </apex:pageBlockButtons>
+   </apex:pageBlock>
+    
+    
+</apex:pageBlock>
+</apex:form>
+
+</apex:page>

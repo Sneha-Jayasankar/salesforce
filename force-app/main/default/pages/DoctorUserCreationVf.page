@@ -1,0 +1,25 @@
+<apex:page Controller="DoctorUserCreationController" showHeader="true" sidebar="true">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageblocksection >
+                <apex:inputField value="{!doc.Name}" required="true"/>
+                <apex:inputField value="{!doc.Email__c}" required="true"/>
+                <apex:inputField value="{!doc.Gender__c}" required="true"/>
+                <apex:inputField value="{!doc.Blood_Group__c}" required="true"/>
+                <apex:inputField value="{!doc.Date_Of_Birth__c}" required="true"/>
+                <apex:inputField value="{!doc.Date_Of_Joining__c}" required="true"/>
+                <apex:inputField value="{!doc.Phone_Number__c}" required="true"/>
+                <apex:inputField value="{!doc.Specialization__c}" required="true"/>
+                <apex:inputField value="{!doc.Experience__c}" required="true"/>
+                <apex:inputField value="{!doc.Department__c}" required="true"/>
+                <apex:inputField value="{!u.Username}" required="true"/>
+                <apex:inputField value="{!u.CommunityNickname}" required="true" />
+                <apex:inputField value="{!u.Alias}" required="true" />
+            </apex:pageblocksection>
+            <apex:pageblockbuttons >
+                <apex:commandButton action="{!SaveRecord}" value="Save" />
+                <apex:commandButton action="{!Cancel}" value="Cancel" />
+            </apex:pageblockbuttons>            
+        </apex:pageblock>
+    </apex:form>
+</apex:page>
